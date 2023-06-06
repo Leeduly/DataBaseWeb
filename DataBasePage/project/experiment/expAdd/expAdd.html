@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/DataBasePage/project/experiment/expAdd/expAdd.css">
+</head>
+<body>
+    <div class="login-box">
+        <h2>Experiment Add Page</h2>
+        <form>
+            <div class="seperate">
+                <div class="user-box">
+                    <input type="text" name="" required="">
+                    <label>Experiment Name</label>
+                </div>
+                <div class="user-box">
+                    <input type="text" name="" required="">
+                    <label>Order</label>
+                </div>
+            </div>
+            <div class="seperate">
+                <div class="user-box">
+                    <input type="date" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ex) 19xx-05-11" name="" required="">
+                    <label>시작일</label>
+                </div>
+                <div class="user-box">
+                    <input type="date" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ex) 19xx-05-11" name="" required="">
+                    <label>종료일</label>
+                </div>
+                <!-- <div class="user-box">
+                    <div class="hide"></div>
+                </div> -->
+            </div>
+            <div class="user-box long">
+                <textarea placeholder="텍스트를 입력하세요."></textarea>
+                <label>Note</label>
+            </div>
+            <div class="sub_sign_btn">
+                <a class="submit" href="/DataBasePage/project/experiment/expMain.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Cancel
+                </a>
+                <button class="signUp" onclick="goTo_Expreiment_page()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Save
+                    </button>
+                    <script>
+                        function goTo_Expreiment_page() {
+                          window.location.href = "/DataBasePage/project/experiment/cell/info.html";
+                        }
+                      </script>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
